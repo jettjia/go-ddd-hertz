@@ -6,7 +6,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/jettjia/go-ddd-hertz/types"
+	"github.com/jettjia/go-ddd-demo/types"
 )
 
 // GenerateQueryCondition 组装 搜索

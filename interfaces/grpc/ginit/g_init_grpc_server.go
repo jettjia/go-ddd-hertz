@@ -1,11 +1,11 @@
 package ginit
 
 import (
-	"github.com/jettjia/go-ddd-hertz/boot"
+	"github.com/jettjia/go-ddd-demo/boot"
 	"google.golang.org/grpc"
 
-	"github.com/jettjia/go-ddd-hertz/interfaces/grpc/ghandler"
-	grpcGoodsProto "github.com/jettjia/go-ddd-hertz/interfaces/grpc/proto/goods"
+	"github.com/jettjia/go-ddd-demo/interfaces/grpc/ghandler"
+	grpcGoodsProto "github.com/jettjia/go-ddd-demo/interfaces/grpc/proto/goods"
 )
 
 // RegisterGrpcSrv 初始化grpc的服务

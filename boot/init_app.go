@@ -1,7 +1,7 @@
 package boot
 
 import (
-	sysSvc "github.com/jettjia/go-ddd-hertz/application/service/sys"
+	sysSvc "github.com/jettjia/go-ddd-demo/application/service/sys"
 )
 
 type App struct {

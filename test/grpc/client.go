@@ -3,7 +3,7 @@ package grpc
 import (
 	"google.golang.org/grpc"
 
-	goodsProto "github.com/jettjia/go-ddd-hertz/interfaces/grpc/proto/goods"
+	goodsProto "github.com/jettjia/go-ddd-demo/interfaces/grpc/proto/goods"
 )
 
 var (

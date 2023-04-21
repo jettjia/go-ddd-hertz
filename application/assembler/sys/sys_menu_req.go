@@ -3,9 +3,9 @@ package sys
 import (
 	"github.com/jinzhu/copier"
 
-	dto "github.com/jettjia/go-ddd-hertz/application/dto/sys"
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/sys"
-	"github.com/jettjia/go-ddd-hertz/global"
+	dto "github.com/jettjia/go-ddd-demo/application/dto/sys"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/sys"
+	"github.com/jettjia/go-ddd-demo/global"
 )
 
 // SysMenuReq 请求参数

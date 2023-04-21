@@ -9,10 +9,10 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	dto "github.com/jettjia/go-ddd-hertz/application/dto/sys"
-	"github.com/jettjia/go-ddd-hertz/global"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/validate"
-	grpcGoodsProto "github.com/jettjia/go-ddd-hertz/interfaces/grpc/proto/goods"
+	dto "github.com/jettjia/go-ddd-demo/application/dto/sys"
+	"github.com/jettjia/go-ddd-demo/global"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/validate"
+	grpcGoodsProto "github.com/jettjia/go-ddd-demo/interfaces/grpc/proto/goods"
 )
 
 func (s *GrpcGoodsServer) CreateSysMenu(ctx context.Context, req *grpcGoodsProto.CreateSysMenuReq) (rsp *grpcGoodsProto.CreateSysMenuRsp, err error) {

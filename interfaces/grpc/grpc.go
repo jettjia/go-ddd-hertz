@@ -2,17 +2,17 @@ package grpc
 
 import (
 	"fmt"
-	"github.com/jettjia/go-ddd-hertz/boot"
+	"github.com/jettjia/go-ddd-demo/boot"
 	"net"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_auth "github.com/grpc-ecosystem/go-grpc-middleware/auth"
 	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
-	"github.com/jettjia/go-ddd-hertz/interfaces/grpc/middleware"
+	"github.com/jettjia/go-ddd-demo/interfaces/grpc/middleware"
 	"google.golang.org/grpc"
 
-	"github.com/jettjia/go-ddd-hertz/global"
-	"github.com/jettjia/go-ddd-hertz/interfaces/grpc/ginit"
+	"github.com/jettjia/go-ddd-demo/global"
+	"github.com/jettjia/go-ddd-demo/interfaces/grpc/ginit"
 )
 
 func InitGrpc(app *boot.App) {

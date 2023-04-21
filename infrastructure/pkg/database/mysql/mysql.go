@@ -11,7 +11,7 @@ import (
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 
-	"github.com/jettjia/go-ddd-hertz/global"
+	"github.com/jettjia/go-ddd-demo/global"
 )
 
 func NewDB() *gorm.DB {

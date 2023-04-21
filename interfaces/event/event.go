@@ -1,7 +1,7 @@
 package event
 
 import (
-	"github.com/jettjia/go-ddd-hertz/boot"
+	"github.com/jettjia/go-ddd-demo/boot"
 )
 
 // InitEvent 消息事件

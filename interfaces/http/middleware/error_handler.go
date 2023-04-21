@@ -1,18 +1,19 @@
 package middleware
 
 import (
+	"context"
 	"github.com/pkg/errors"
 
-	"github.com/gin-gonic/gin"
+	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/go-sql-driver/mysql"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gogf/gf/v2/errors/gerror"
 
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/responseutil"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/responseutil"
 )
 
-func ErrorHandler(c *gin.Context) {
-	c.Next()
+func ErrorHandler(ctx context.Context, c *app.RequestContext) {
+	c.Next(ctx)
 	for _, err := range c.Errors {
 		// 统一处理 mysql 1062 错误，sql内容冲突
 		var mysqlErr *mysql.MySQLError

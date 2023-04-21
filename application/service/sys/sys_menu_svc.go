@@ -3,10 +3,10 @@ package sys
 import (
 	"context"
 
-	assembler "github.com/jettjia/go-ddd-hertz/application/assembler/sys"
-	dto "github.com/jettjia/go-ddd-hertz/application/dto/sys"
-	agg "github.com/jettjia/go-ddd-hertz/domain/aggregate/sys"
-	svc "github.com/jettjia/go-ddd-hertz/domain/service/sys"
+	assembler "github.com/jettjia/go-ddd-demo/application/assembler/sys"
+	dto "github.com/jettjia/go-ddd-demo/application/dto/sys"
+	agg "github.com/jettjia/go-ddd-demo/domain/aggregate/sys"
+	svc "github.com/jettjia/go-ddd-demo/domain/service/sys"
 )
 
 type SysMenuService struct {

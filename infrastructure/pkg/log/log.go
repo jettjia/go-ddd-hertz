@@ -7,7 +7,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/natefinch/lumberjack.v2"
 
-	"github.com/jettjia/go-ddd-hertz/infrastructure/config"
+	"github.com/jettjia/go-ddd-demo/infrastructure/config"
 )
 
 // NewLogger 获取日志句柄

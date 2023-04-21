@@ -1,7 +1,7 @@
 package sys
 
 import (
-	"github.com/jettjia/go-ddd-hertz/types"
+	"github.com/jettjia/go-ddd-demo/types"
 )
 
 // 请求对象
@@ -20,26 +20,26 @@ type (
 
 	// DelSysMenusReq 删除 请求对象
 	DelSysMenusReq struct {
-		Id uint64 ` validate:"required" uri:"id" json:"id"` // ID
+		Id uint64 ` validate:"required" path:"id" json:"id"` // ID
 	}
 
 	// UpdateSysMenuReq 修改SysMenu 请求对象
 	UpdateSysMenuReq struct {
-		Id          uint64 ` validate:"required" uri:"id" json:"id"` // ID
-		MenuName    string ` json:"menu_name"`                       // menu名称
-		Desc        string ` json:"desc"`                            // 描述
-		Route       string ` json:"route"`                           // 菜单路由
-		State       uint   ` json:"state"`                           // 1显示,2否
-		Pid         uint64 ` json:"pid"`                             // 父id
-		Pname       string ` json:"pname"`                           // 父路由名称
-		SortOrder   int    ` json:"sort_order"`                      // 排序
-		BackendType int    ` json:"backend_type"`                    // 1总后台，2运营后台
+		Id          uint64 ` validate:"required" path:"id" json:"id"` // ID
+		MenuName    string ` json:"menu_name"`                        // menu名称
+		Desc        string ` json:"desc"`                             // 描述
+		Route       string ` json:"route"`                            // 菜单路由
+		State       uint   ` json:"state"`                            // 1显示,2否
+		Pid         uint64 ` json:"pid"`                              // 父id
+		Pname       string ` json:"pname"`                            // 父路由名称
+		SortOrder   int    ` json:"sort_order"`                       // 排序
+		BackendType int    ` json:"backend_type"`                     // 1总后台，2运营后台
 
 	}
 
 	// FindSysMenuByIdReq 查询 请求对象
 	FindSysMenuByIdReq struct {
-		Id uint64 ` validate:"required" uri:"id" json:"id"` // ID
+		Id uint64 ` validate:"required" path:"id" json:"id"` // ID
 	}
 
 	// FindSysMenuByQueryReq 查询 请求对象

@@ -2,9 +2,9 @@ package ginit
 
 import (
 	"fmt"
-	"github.com/jettjia/go-ddd-hertz/global"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/consts"
-	grpcGoodsProto "github.com/jettjia/go-ddd-hertz/interfaces/grpc/proto/goods"
+	"github.com/jettjia/go-ddd-demo/global"
+	"github.com/jettjia/go-ddd-demo/infrastructure/consts"
+	grpcGoodsProto "github.com/jettjia/go-ddd-demo/interfaces/grpc/proto/goods"
 	"google.golang.org/grpc"
 )
 

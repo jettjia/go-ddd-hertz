@@ -3,9 +3,9 @@ package sys
 import (
 	"time"
 
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/sys"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/util"
-	po "github.com/jettjia/go-ddd-hertz/infrastructure/repository/po/sys"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/sys"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/util"
+	po "github.com/jettjia/go-ddd-demo/infrastructure/repository/po/sys"
 	"github.com/jinzhu/copier"
 )
 

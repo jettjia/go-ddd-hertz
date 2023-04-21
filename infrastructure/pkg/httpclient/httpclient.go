@@ -10,7 +10,7 @@ import (
 	"github.com/gogf/gf/v2/net/gclient"
 	"github.com/gogf/gf/v2/util/gconv"
 
-	"github.com/jettjia/go-ddd-hertz/global"
+	"github.com/jettjia/go-ddd-demo/global"
 )
 
 // HttpClient http请求

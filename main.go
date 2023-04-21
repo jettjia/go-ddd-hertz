@@ -6,11 +6,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/jettjia/go-ddd-hertz/boot"
-	"github.com/jettjia/go-ddd-hertz/interfaces/event"
-	"github.com/jettjia/go-ddd-hertz/interfaces/grpc"
-	"github.com/jettjia/go-ddd-hertz/interfaces/http"
-	"github.com/jettjia/go-ddd-hertz/interfaces/job"
+	"github.com/jettjia/go-ddd-demo/boot"
+	"github.com/jettjia/go-ddd-demo/interfaces/event"
+	"github.com/jettjia/go-ddd-demo/interfaces/http"
+	"github.com/jettjia/go-ddd-demo/interfaces/job"
 )
 
 func main() {
@@ -27,7 +26,7 @@ func main() {
 	http.InitHttp(app)
 
 	// start grpc
-	grpc.InitGrpc(app)
+	//grpc.InitGrpc(app)
 
 	// start event mq
 	event.InitEvent(app)

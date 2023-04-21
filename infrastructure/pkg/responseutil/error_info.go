@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/jettjia/go-ddd-hertz/global"
+	"github.com/jettjia/go-ddd-demo/global"
 )
 
 // ErrorInfo 堆栈错误信息

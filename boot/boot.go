@@ -1,10 +1,10 @@
 package boot
 
 import (
-	"github.com/jettjia/go-ddd-hertz/global"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/config"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/database/mysql"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/log"
+	"github.com/jettjia/go-ddd-demo/global"
+	"github.com/jettjia/go-ddd-demo/infrastructure/config"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/database/mysql"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/log"
 )
 
 func InitServer(env string) {

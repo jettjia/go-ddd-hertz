@@ -6,7 +6,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/responseutil"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/responseutil"
 )
 
 const (

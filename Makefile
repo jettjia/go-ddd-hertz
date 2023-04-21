@@ -1,4 +1,4 @@
-PKG := "github.com/jettjia/go-ddd-hertz"
+PKG := "github.com/jettjia/go-ddd-demo"
 PKG_LIST := $(shell go list ${PKG}/...)
 APP=GoDddDemo
 VERSION=1.0.0

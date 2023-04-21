@@ -6,9 +6,9 @@ import (
 	"github.com/jinzhu/copier"
 	"gorm.io/plugin/soft_delete"
 
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/sys"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/util"
-	po "github.com/jettjia/go-ddd-hertz/infrastructure/repository/po/sys"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/sys"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/util"
+	po "github.com/jettjia/go-ddd-demo/infrastructure/repository/po/sys"
 )
 
 // E2PSysMenuAdd entity数据转换成数据库po

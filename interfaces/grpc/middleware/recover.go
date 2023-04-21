@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/responseutil"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/responseutil"
 )
 
 func RecoverInterceptor() grpc_recovery.Option {

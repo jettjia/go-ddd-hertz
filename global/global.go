@@ -4,8 +4,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/jwt"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/config"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/jwt"
+	"github.com/jettjia/go-ddd-demo/infrastructure/config"
 )
 
 var (

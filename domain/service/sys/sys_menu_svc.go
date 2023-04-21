@@ -3,10 +3,10 @@ package sys
 import (
 	"context"
 
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/sys"
-	isysMenu "github.com/jettjia/go-ddd-hertz/domain/irepository/sys"
-	repositoryimpl "github.com/jettjia/go-ddd-hertz/infrastructure/repository/repositoryimpl/sys"
-	"github.com/jettjia/go-ddd-hertz/types"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/sys"
+	isysMenu "github.com/jettjia/go-ddd-demo/domain/irepository/sys"
+	repositoryimpl "github.com/jettjia/go-ddd-demo/infrastructure/repository/repositoryimpl/sys"
+	"github.com/jettjia/go-ddd-demo/types"
 )
 
 // SysMenuSvc sys_menu_svc

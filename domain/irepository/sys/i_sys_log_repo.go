@@ -3,8 +3,8 @@ package sys
 import (
 	"context"
 
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/sys"
-	"github.com/jettjia/go-ddd-hertz/types"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/sys"
+	"github.com/jettjia/go-ddd-demo/types"
 )
 
 // ISysLogRepo sys_log

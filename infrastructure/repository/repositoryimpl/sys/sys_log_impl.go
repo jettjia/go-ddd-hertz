@@ -5,14 +5,14 @@ import (
 
 	"gorm.io/gorm"
 
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/sys"
-	isysLog "github.com/jettjia/go-ddd-hertz/domain/irepository/sys"
-	"github.com/jettjia/go-ddd-hertz/global"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/pkg/util"
-	converter "github.com/jettjia/go-ddd-hertz/infrastructure/repository/converter/sys"
-	po "github.com/jettjia/go-ddd-hertz/infrastructure/repository/po/sys"
-	"github.com/jettjia/go-ddd-hertz/infrastructure/repository/repositoryimpl"
-	"github.com/jettjia/go-ddd-hertz/types"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/sys"
+	isysLog "github.com/jettjia/go-ddd-demo/domain/irepository/sys"
+	"github.com/jettjia/go-ddd-demo/global"
+	"github.com/jettjia/go-ddd-demo/infrastructure/pkg/util"
+	converter "github.com/jettjia/go-ddd-demo/infrastructure/repository/converter/sys"
+	po "github.com/jettjia/go-ddd-demo/infrastructure/repository/po/sys"
+	"github.com/jettjia/go-ddd-demo/infrastructure/repository/repositoryimpl"
+	"github.com/jettjia/go-ddd-demo/types"
 )
 
 var _ isysLog.ISysLogRepo = (*SysLog)(nil)

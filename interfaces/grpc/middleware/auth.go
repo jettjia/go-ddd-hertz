@@ -6,8 +6,8 @@ import (
 
 	"google.golang.org/grpc/metadata"
 
-	entity "github.com/jettjia/go-ddd-hertz/domain/entity/jwt"
-	"github.com/jettjia/go-ddd-hertz/global"
+	entity "github.com/jettjia/go-ddd-demo/domain/entity/jwt"
+	"github.com/jettjia/go-ddd-demo/global"
 )
 
 // AuthInterceptor 认证拦截器，对以authorization为头部，形式为`bearer token`的Token进行验证

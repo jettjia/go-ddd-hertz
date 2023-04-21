@@ -1,7 +1,7 @@
 package ginit
 
 import (
-	"github.com/jettjia/go-ddd-hertz/boot"
+	"github.com/jettjia/go-ddd-demo/boot"
 	"google.golang.org/grpc"
 )
 

@@ -2,17 +2,17 @@ package responseutil
 
 import (
 	"context"
+	"github.com/pkg/errors"
 	"net/http"
 
-	"github.com/gin-gonic/gin"
+	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/gogf/gf/v2/errors/gcode"
 	"github.com/gogf/gf/v2/errors/gerror"
 	"github.com/gogf/gf/v2/i18n/gi18n"
-	"github.com/pkg/errors"
 	"gorm.io/gorm"
 
-	"github.com/jettjia/go-ddd-hertz/global"
-	"github.com/jettjia/go-ddd-hertz/types"
+	"github.com/jettjia/go-ddd-demo/global"
+	"github.com/jettjia/go-ddd-demo/types"
 )
 
 type rspCreateData struct {
@@ -31,7 +31,7 @@ type rspListNull struct {
 }
 
 // RspOk 返回操作成功
-func RspOk(c *gin.Context, code int, any interface{}) {
+func RspOk(c *app.RequestContext, code int, any interface{}) {
 	switch code {
 	case 200:
 		c.JSON(
@@ -49,19 +49,6 @@ func RspOk(c *gin.Context, code int, any interface{}) {
 		c.AbortWithStatus(
 			http.StatusNoContent,
 		)
-	case 200200:
-		rspNull := rspListNull{
-			Entries: make([]int, 0),
-		}
-		c.JSON(
-			http.StatusOK,
-			rspNull,
-		)
-	case 200201:
-		c.JSON(
-			http.StatusOK,
-			make([]int, 0),
-		)
 
 	default:
 		c.JSON(
@@ -72,7 +59,7 @@ func RspOk(c *gin.Context, code int, any interface{}) {
 }
 
 // RspErr 返回操作失败
-func RspErr(c *gin.Context, err error) {
+func RspErr(c *app.RequestContext, err error) {
 	code := gerror.Code(err)
 	if code == gcode.CodeNil && err != nil {
 		code = gcode.CodeInternalError
@@ -88,7 +75,7 @@ func RspErr(c *gin.Context, err error) {
 	rspError(c, code.Code(), subCode, msg, err)
 }
 
-func rspError(c *gin.Context, code int, subCode int, message string, err error) {
+func rspError(c *app.RequestContext, code int, subCode int, message string, err error) {
 	c.JSON(
 		code,
 		rspErrorData{
